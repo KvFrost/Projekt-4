@@ -1,0 +1,140 @@
+h3 {
+    font-size: 30px;
+}
+
+/*Overordnet design på footer*/
+.wwffooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fixed;
+    background-color: #000;
+    color: #fff;
+  }
+/*Sørger for kolonner går vandret*/
+  .topfooter {
+    display: flex;
+    margin-top: 75px;
+  }
+/*Fjerner prikker fra liste*/
+  .footerliste {
+    list-style: none;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+  }
+/*rykker header ud over li for at de står over hinanden*/
+  header {
+    margin-left: 40px; 
+  }
+
+/*Laver mellemrum mellem lister*/
+li {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.nyhedsbrev {
+    font-size: 45px;
+}
+
+/*overskrift og liste*/
+  .kolonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .midtfooter {
+    display: flex;
+    margin-top: 150px;
+  }
+  
+.rightmidt {
+    flex-grow: 1;
+    max-width: 30%;
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+  .leftmidt {
+    display: flex;
+    justify-content: space-between; 
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+.button {
+    background-color: #ffffff; 
+    color: #bbbbbb; 
+    border: 1px solid #ccc;
+}
+.buttonorange {
+    background-color: #ff7500;
+    color: #fff;
+    border: none;
+}
+
+.button, .buttonorange {
+    width: 580px;
+    height: 135px;
+    cursor: pointer; 
+    margin-top: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+.bundfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.rightbund, .leftbund {
+    display: flex;
+}
+
+.iconer {
+    width: auto;
+    height: 85px;
+    margin-right: 20px;
+}
+
+.logotekstfooter {
+    margin-left: 75px;
+    font-size: 35px;
+}
+
+.logofooter {
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+.scrollfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scroll-top-button {
+    width: 150px;
+    height: 150px;
+    background-color: #ff7500;
+    color: white;
+    text-align: center;
+    line-height: 150px; 
+    cursor: pointer;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.cookie {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
