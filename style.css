@@ -1,140 +1,105 @@
-h3 {
-    font-size: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Overordnet design på footer*/
-.wwffooter {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: fixed;
-    background-color: #000;
-    color: #fff;
-  }
-/*Sørger for kolonner går vandret*/
-  .topfooter {
-    display: flex;
-    margin-top: 75px;
-  }
-/*Fjerner prikker fra liste*/
-  .footerliste {
-    list-style: none;
-    justify-content: flex-start;
-    font-family: 'Open Sans', sans-serif;
-  }
-/*rykker header ud over li for at de står over hinanden*/
-  header {
-    margin-left: 40px; 
-  }
-
-/*Laver mellemrum mellem lister*/
-li {
-    margin-bottom: 10px;
-    font-size: 35px;
+body {
+  min-height: 200vh;
+  background-color: #000000;
 }
 
-.nyhedsbrev {
-    font-size: 45px;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  padding: 15px 60px;
+  z-index: 100000;
 }
 
-/*overskrift og liste*/
-  .kolonne {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    padding: 20px;
-  }
-
-  .midtfooter {
-    display: flex;
-    margin-top: 150px;
-  }
-  
-.rightmidt {
-    flex-grow: 1;
-    max-width: 30%;
-    margin-left: 50px;
-    font-size: 35px;
+header.sticky {
+  padding: 20px 60px;
+  background: #ffffff;
 }
 
-  .leftmidt {
-    display: flex;
-    justify-content: space-between; 
-    flex-grow: 1;
-    margin-right: 50px;
+.logo img {
+  position: relative;
+  height: 65px;
 }
 
-.button {
-    background-color: #ffffff; 
-    color: #bbbbbb; 
-    border: 1px solid #ccc;
-}
-.buttonorange {
-    background-color: #ff7500;
-    color: #fff;
-    border: none;
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button, .buttonorange {
-    width: 580px;
-    height: 135px;
-    cursor: pointer; 
-    margin-top: 150px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+header ul li {
+  position: relative;
+  list-style: none;
 }
 
-.bundfooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 250px;
-    margin-bottom: 50px;
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: "WWF Regular";
+  color: #ffffff;
+  transition: 0.2s;
 }
 
-.rightbund, .leftbund {
-    display: flex;
+header ul li a:hover {
+  color: #FF7500;
 }
 
-.iconer {
-    width: auto;
-    height: 85px;
-    margin-right: 20px;
+.icons {
+  display: flex;
+  padding-left: 25%;
 }
 
-.logotekstfooter {
-    margin-left: 75px;
-    font-size: 35px;
+.icons img {
+  height: 20px;
 }
 
-.logofooter {
-    margin-left: 50px;
-    margin-top: -40px;
+.search-icon {
+  padding-right: 20px;
 }
 
-.scrollfooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header-buttons {
+  display: flex;
 }
 
-.scroll-top-button {
-    width: 150px;
-    height: 150px;
-    background-color: #ff7500;
-    color: white;
-    text-align: center;
-    line-height: 150px; 
-    cursor: pointer;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    font-size: 50px;
+.header-buttons a {
+  display: inline-block;
+  padding: 25px 20px;
+  margin-left: 10px;
+  background-color: #FF7500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "WWF Regular";
 }
 
-.cookie {
-    width: 100px;
-    height: 100px;
-    margin-left: 30px;
+.header-buttons a:hover {
+  background-color: #E56900;
+}
+
+.banner1.sticky {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+header.sticky ul li a {
+  color: black;
+}
+
+header.sticky ul li a:hover {
+  color: #FF7500;
 }
