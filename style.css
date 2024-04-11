@@ -1,14 +1,17 @@
+/*---OVER ALL---*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*---BODY GENERAL---*/
 body {
   min-height: 200vh;
   background-color: #000000;
 }
 
+/*---HEADER---*/
 header {
   position: fixed;
   top: 0;
@@ -49,6 +52,7 @@ header ul li a {
   margin: 0 15px;
   text-decoration: none;
   font-family: "WWF Regular";
+  font-size: 20px;
   color: #ffffff;
   transition: 0.2s;
 }
@@ -82,6 +86,7 @@ header ul li a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: "WWF Regular";
+  font-size: 20px;
 }
 
 .header-buttons a:hover {
@@ -104,6 +109,7 @@ header.sticky ul li a:hover {
   color: #FF7500;
 }
 
+/*---FORSIDE---*/
 .hajbillede {
   width: 100vw;
   height: 100vh;
@@ -144,46 +150,46 @@ header.sticky ul li a:hover {
   color: black; 
 }
 
-/*Overordnet design på footer*/
+/*---FOOTER---*/
 .wwffooter {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-  }
-/*Sørger for kolonner går vandret*/
-  .topfooter {
-    display: flex;
-  }
-/*Fjerner prikker fra liste*/
-  .footerliste {
-    list-style: none;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-/*Laver mellemrum mellem lister*/
-li {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 30px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
 }
 
+.topfooter {
+  display: flex;
+  padding: 30px 48px 30px 48px;
+}
+
+.footerliste {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #F3F3E9;
+}
+
+.topfooter .kolonne .footerliste li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
 
 h3 {
-    font-size: 35px;
-    font-family: "WWF Regular";
+  font-size: 25px;
+  font-family: "WWF Regular";
 }
 
-p {
-    font-size: 35px;
+.nyhedsbrevtext {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nyhedsbrev {
-    font-size: 45px;
+    font-size: 25px;
     margin-bottom: 30px;
     font-family: "WWF Regular";
 }
 
-/*overskrift og liste*/
   .kolonne {
     display: flex;
     flex-direction: column;
@@ -193,10 +199,10 @@ p {
     margin-left: 40px;
   }
 
-  .midtfooter {
-    display: flex;
-    margin-top: 150px;
-  }
+.midtfooter {
+  display: flex;
+  margin-top: 30px;
+}
   
 .rightmidt {
     flex-grow: 1;
@@ -204,42 +210,44 @@ p {
     margin-left: 50px;
 }
 
-  .leftmidt {
+.leftmidt {
     display: flex;
     justify-content: space-between; 
-    flex-grow: 1;
     margin-right: 50px;
+    margin-left: 80px;
     margin-top: -80px;
+    flex-grow: 1;
 }
 
-.button {
+.leftmidt .button {
     background-color: #ffffff; 
     color: #bbbbbb; 
     border: 1px solid #ccc;
     text-align: left;
 }
-.buttonorange {
+.leftmidt .buttonorange {
     background-color: #ff7500;
     color: #fff;
     border: none;
     font-family: "WWF Regular";
 }
 
-.button, .buttonorange {
-    width: 580px;
-    height: 135px;
+.leftmidt .button, .buttonorange {
+    width: 270px;
+    height: 70px;
     cursor: pointer; 
     margin-top: 150px;
+    padding-left: 15px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
-    padding-left: 20px;
+    font-size: 20px;
+
 }
 
 .bundfooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 250px;
+    margin-top: 150px;
     
 }
 
@@ -249,20 +257,20 @@ p {
 
 .iconer {
     width: auto;
-    height: 85px;
-    margin-right: 20px;
+    height: 45px;
+    margin-right: 40px;
 }
 
 .logotekstfooter {
     margin-left: 75px;
     font-family: "WWF Regular";
+    font-size: 25px;
 }
 
 .logofooter {
     margin-left: 50px;
-    margin-top: -70px;
-    width: 150px;
-    height: 150px;
+    width: 85px;
+    height: 85px;
 }
 
 .scrollfooter {
@@ -272,8 +280,8 @@ p {
 }
 
 .scroll-top-button {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     background-color: #ff7500;
     color: white;
     text-align: center;
@@ -285,8 +293,8 @@ p {
 }
 
 .cookie {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin-left: 30px;
     margin-bottom: 10px;
 }
