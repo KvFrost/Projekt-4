@@ -103,3 +103,191 @@ header.sticky ul li a {
 header.sticky ul li a:hover {
   color: #FF7500;
 }
+
+.hajbillede {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hajsektion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hajoverskrift {
+  position: absolute;
+  color: white; 
+  font-size:200px; 
+  font-weight: bold; 
+  z-index: 1; 
+  font-family: "WWF Regular";
+}
+
+.hajbutton {
+  position: absolute;
+  margin-top: 600px; 
+  padding: 30px 100px; 
+  font-size: 30px; 
+  background-color: transparent;
+  color: white; 
+  border: 2px solid white; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+  font-family: "WWF Regular";
+}
+
+.hajbutton:hover {
+  background-color: white; 
+  color: black; 
+}
+
+/*Overordnet design på footer*/
+.wwffooter {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+  }
+/*Sørger for kolonner går vandret*/
+  .topfooter {
+    display: flex;
+  }
+/*Fjerner prikker fra liste*/
+  .footerliste {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/*Laver mellemrum mellem lister*/
+li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+h3 {
+    font-size: 35px;
+    font-family: "WWF Regular";
+}
+
+p {
+    font-size: 35px;
+}
+
+.nyhedsbrev {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-family: "WWF Regular";
+}
+
+/*overskrift og liste*/
+  .kolonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 20px;
+    margin-left: 40px;
+  }
+
+  .midtfooter {
+    display: flex;
+    margin-top: 150px;
+  }
+  
+.rightmidt {
+    flex-grow: 1;
+    max-width: 30%;
+    margin-left: 50px;
+}
+
+  .leftmidt {
+    display: flex;
+    justify-content: space-between; 
+    flex-grow: 1;
+    margin-right: 50px;
+    margin-top: -80px;
+}
+
+.button {
+    background-color: #ffffff; 
+    color: #bbbbbb; 
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.buttonorange {
+    background-color: #ff7500;
+    color: #fff;
+    border: none;
+    font-family: "WWF Regular";
+}
+
+.button, .buttonorange {
+    width: 580px;
+    height: 135px;
+    cursor: pointer; 
+    margin-top: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.bundfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 250px;
+    
+}
+
+.rightbund, .leftbund {
+    display: flex;
+}
+
+.iconer {
+    width: auto;
+    height: 85px;
+    margin-right: 20px;
+}
+
+.logotekstfooter {
+    margin-left: 75px;
+    font-family: "WWF Regular";
+}
+
+.logofooter {
+    margin-left: 50px;
+    margin-top: -70px;
+    width: 150px;
+    height: 150px;
+}
+
+.scrollfooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.scroll-top-button {
+    width: 150px;
+    height: 150px;
+    background-color: #ff7500;
+    color: white;
+    text-align: center;
+    line-height: 150px; 
+    cursor: pointer;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.cookie {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
