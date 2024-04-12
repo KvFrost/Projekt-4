@@ -190,14 +190,14 @@ h3 {
     font-family: "WWF Regular";
 }
 
-  .kolonne {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    padding: 20px;
-    margin-left: 40px;
-  }
+.kolonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 20px;
+  margin-left: 40px;
+}
 
 .midtfooter {
   display: flex;
