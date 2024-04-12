@@ -8,32 +8,187 @@
     <link href="https://db.onlinewebfonts.com/c/596b9b0742c4fb004a2adcaf9861a128?family=WWF+Regular" rel="stylesheet">
     <script src="javascript/header.js"></script>
   </head>
-
   <body>
     <header>
-      <div class="logo">
-        <img src="billeder/logo.jpg" alt="Logo">
-      </div>
+      <div class="logo"><img alt="Logo" src="billeder/logo.jpg"></div>
       <ul>
-          <li><a href="#">VORES ARBEJDE</a></li>
-          <li><a href="#">FORSTÅ NATURKRISEN</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="projekter.html">PROJEKTER</a></li>
-          <li><a href="blivfrivillig.html">BLIV FLIVILLIG</a></li>
+        <li>
+          <a href="#">VORES ARBEJDE</a>
+        </li>
+        <li>
+          <a href="#">FORSTÅ NATURKRISEN</a>
+        </li>
+        <li>
+          <a href="#">SHOP</a>
+        </li>
+        <li>
+          <a href="projekter.html">PROJEKTER</a>
+        </li>
+        <li>
+          <a href="blivfrivillig.html">BLIV FLIVILLIG</a>
+        </li>
       </ul>
-      <div class="icons">
-          <img class="search-icon" src="billeder/search-icon.png" alt="search-icon">
-          <img class="cart-icon" src="billeder/cart-icon.png" alt="cart-icon">
-      </div>
+      <div class="icons"><img alt="search-icon" class="search-icon" src="billeder/search-icon.png"> <img alt="cart-icon" class="cart-icon" src="billeder/cart-icon.png"></div>
       <div class="header-buttons">
-          <a href="#" class="frivillig-button">BLIV FRIVILLIG NU</a>
-          <a href="#" class="stoet-button">STØT NATUREN</a>
+        <a class="frivillig-button" href="#">BLIV FRIVILLIG NU</a> <a class="stoet-button" href="#">STØT NATUREN</a>
       </div>
-      <section class="banner1"></section>
     </header>
+    <script>
+    window.addEventListener("scroll", function(){
+     let header = document.querySelector("header");
+     header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+    <section class="billede-section">
+      <img alt="Unge frivillige" class="forside2-image" src="billeder/ungefrivillige.jpg">
+      <h1 class="billede-titel">VÆR MED TIL</h1>
+      <h1 class="billede-titel1">AT GØRE EN FORSKEL</h1>
+    </section>
+    <section class="baggrund1">
+      <div class="frivillig-container">
+        <div class="volunteer-content">
+          <div class="frivillig-tekst">
+            <h2 class="titel3">FRIVILLIG HOS WWF</h2>
+            <p class="frivillig-beskrivelse">At være frivillig hos WWF er en enestående mulighed for at gøre en direkte og meningsfuld indsats for at bevare vores planet og dens dyreliv. Som frivillig hos WWF bliver du en del af en global bevægelse, der arbejder for at beskytte og genoprette naturen, bevare biodiversiteten og bekæmpe klimaforandringerne.<br>
+            <br>
+            Som frivillig hos WWF kan du deltage i en bred vifte af aktiviteter og projekter, alt efter dine interesser og færdigheder. Dette kan omfatte alt fra at deltage i kampagner og events, til at støtte op om naturbevaringsprojekter lokalt eller internationalt, og endda til at hjælpe med fundraising og oplysningsarbejde.</p>
+            <div class="buttons">
+              <button class="frivillig-button">BLIV FRIVILLIG NU</button> <button class="projekt-button">SE PROJEKTER</button>
+            </div>
+          </div>
+        </div>
+        <div class="frivillig-billede"><img alt="Volunteer image" class="frivillig-image" src="billeder/frivillig-badge.png"></div>
+      </div>
+    </section>
+    <section>
+      <div class="projekter-kort">
+        <h2 class="titel4">PROJEKTER I NÆRHEDEN AF DIG</h2>
+        <div class="projekter-siden">
+          <iframe height="600" src="https://www.google.com/maps/d/embed?mid=17GHTk5eu_47dM09ffzBl5MlfWnJpEcA&ehbc=2E312F&noprof=1" width="600"></iframe>
+          <div class="accordion-menu">
+            <button class="accordion">BEVARELSE AF DYRELIV</button>
+            <div class="panel">
+              <p>Drømmer du om at gøre en forskel for dyrelivet og bidrage til bevarelsen af vores planets utrolige biodiversitet? Så er dette din chance for at gøre en reel forskel. Vores bevarelsesprojekter giver dig mulighed for at engagere dig i beskyttelsen af truede arter, bevarelsen af naturområder og dyrenes levesteder samt at deltage i forskning og overvågning af dyrepopulationer. Uanset om du er interesseret i havskildpadder, truede kattedyr eller fuglebeskyttelse, så har vi spændende muligheder for dig.</p>
+            </div><button class="accordion">BEVARELSE AF NATUR OG HAV</button>
+            <div class="panel">
+              <p>Vores natur og hav er fundamentale for vores planets sundhed og trivsel. Gennem vores bevarelsesprojekter arbejder vi på at beskytte og genoprette sårbare økosystemer, bevare biodiversiteten og bekæmpe trusler mod vores naturlige miljø. Fra skovrestaurering og kystbeskyttelse til marine bevarelsesområder og oplysning om plastforurening, er vores mål at sikre en bæredygtig fremtid for vores natur og hav.</p>
+            </div><button class="accordion">STUDIERELATERET FRIVILLIGT ARBEJDE</button>
+            <div class="panel">
+              <p>Er du en studerende, der ønsker at kombinere din uddannelse med meningsfuldt frivilligt arbejde? Vores studierelaterede frivillige muligheder giver dig chancen for at få praktisk erfaring, udvikle færdigheder og bidrage til samfundet. Uanset om du er interesseret i miljømæssig forskning, undervisning af børn om bæredygtighed eller fundraising, så har vi spændende projekter, der passer til dine interesser og tidsplan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+       var acc = document.getElementsByClassName("accordion");
+       var i;
+       
+       for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+           this.classList.toggle("active");
+           var panel = this.nextElementSibling;
+           if (panel.style.display === "block") {
+             panel.style.display = "none";
+           } else {
+             panel.style.display = "block";
+           }
+         });
+       }
+    </script>
+    <section class="kontakt-section">
+      <div class="kontakt-section2">
+        <div class="kontakt-indhold">
+          <div class="kontakt-billede"><img alt="Kontakt os" class="contact-billede" src="billeder/kontakt-billede.png"></div>
+          <div class="kontakt-tekst">
+            <div class="kontakt-info">
+              <h2 class="titel5">HAR DU BRUG FOR HJÆLP?</h2>
+              <p class="kontakt-beskrivelse">Vores frivillige kontaktlinje er her for at hjælpe dig med at finde den perfekte mulighed for frivilligt arbejde, der passer til dine interesser, færdigheder og tidsplan. Vores dedikerede team står klar til at besvare dine spørgsmål, give dig mere information om vores projekter og aktiviteter, og guide dig gennem registreringsprocessen.<br></p>
+              <p class="kontakt-detaljer"><strong>Ring 00 00 00 00<br>
+              Mail: frivillig@wwf.dk</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <div>
+    <div class="tilmeld-dig">
+      <img src="billeder/form-billede.jpg" class="træ-billede" alt="billede af træ">
+      <form class="tilmeld-form">
+        <div class="titel6">TILMELD DIG SOM FRIVILLIG</div>
+         <div class="tilmeld-beskrivelse">
+          Bliv en del af vores dedikerede frivilligteam og vær med til at gøre en
+          forskel! Som frivillig har du mulighed for at engagere dig i spændende
+          projekter og aktiviteter, der støtter naturbevarelse, dyrebeskyttelse og
+          bæredygtighed.
+          <br>
+          <br>
+         </div>
+        <div class="form-overskrift">
+          <div class="form-tekst">Hvad vil du gerne hjælpe med?</div>
+        </div>
+        <div>
+          <div class="felt-form">
+            <div class="afkrydsnings-felt">
+              <div class="felter">
+                <label><input type="checkbox">Havet</label>
+                <label><input type="checkbox">Naturen</label>
+                <label><input type="checkbox">Dyr</label>
+              </div>
+            </div>
+            <div class="afkrydsnings-felt2">
+              <div class="felter">
+                <label><input type="checkbox">Online</label>
+                <label><input type="checkbox">Studieretning</label>
+                <label><input type="checkbox">Ved ikke</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label class="form-tekst" for="name">Dit fulde navn  <dl class="stjerne">*</dl></label>
+        <input type="text" id="name" required>
+  
+        <label class="form-tekst" for="birthyear">Dit fødselsår <dl class="stjerne">*</dl></label>
+        <input type="number" id="birthyear" required>
+        
+        <label class="form-tekst" for="phone">Telefonnummer <dl class="stjerne">*</dl></label>
+        <input type="tel" id="phone" required>
+        
+        <label class="form-tekst" for="email">E-mail <dl class="stjerne">*</dl></label>
+        <input type="email" id="email" required>
+        
+        <label class="form-tekst" for="address">Adresse</label>
+        <input type="text" id="address">
+        
+        <label class="form-tekst" for="questions">Spørgsmål</label>
+        <textarea id="questions"></textarea>
+        
+        <div class="samtykke"><strong>Samtykke </strong></div>
+        <div> <br>
+          Ved at indsende dine oplysninger eller deltage i vores aktiviteter giver
+          du samtykke til, at vi kan behandle dine personoplysninger i
+          overensstemmelse med vores privatlivspolitik.
+        </div>
+        <div>
+          <input type="checkbox" id="consent" required>
+          <label class="form-tekst1" for="consent">Jeg accepterer overstående *</label>
+        </div>
+        
+        <button class="frivillig-button" type="submit">INDSEND</button>
+      </form>
+    </div>
+  </div>
+        <section class="support-section">
+          <div class="support-content">
+            <h1 class="support-heading">VÆR MED TIL AT PÅVIRKE VORES PLANETS FREMTID</h1>
+            <div class="support-options">
+              <button class="support-monthly">STØT FAST</button>
+              <button class="support-onetime">STØT MED ENKELTDONATION</button>
+            </div>
+            <p class="support-question"><u>Har du spørgsmål til vores støttemuligheder?</u></p>
+          </div>
+        </section>   
 
-    <main>
-    </main>
 
     <footer class="wwffooter">
       <container class="topfooter">   
