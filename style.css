@@ -816,6 +816,7 @@ button.tilmeld:hover {
   width: 100%;
   height: auto;
   position: absolute;
+
 }
 
 .overlayhand {
@@ -827,6 +828,15 @@ button.tilmeld:hover {
   font-size: 100px;
   font-weight: 400;
   color: white;
+}
+
+.titelhand, .titel2hand {
+  position: relative;
+  padding: 10px;
+  font-size: 70px;
+  font-family: "WWF Regular";
+  line-height: 1.2;
+  background-color: black;
 }
 
 .projekter {
