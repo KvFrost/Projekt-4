@@ -319,6 +319,7 @@ iframe {
     padding:  10px;
     background-color: white;
     overflow: hidden;
+    display: none;
     width: 500px;
     margin-bottom: 20px;
     font-family: "Open sans", sans-serif;
