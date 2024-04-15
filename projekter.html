@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://db.onlinewebfonts.com/c/596b9b0742c4fb004a2adcaf9861a128?family=WWF+Regular" rel="stylesheet">
     <script src="javascript/header.js"></script>
+    <script src="https://kit.fontawesome.com/3d5c302559.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -29,10 +33,85 @@
           <a href="#" class="frivillig-button">BLIV FRIVILLIG NU</a>
           <a href="#" class="stoet-button">STØT NATUREN</a>
       </div>
-      <section class="banner1"></section>
+      <section class="banner1">
+      </section>
     </header>
 
     <main>
+      <div class="handbanner">
+        <img src="billeder/hands-water.jpg" alt="hands in water">
+        <div class="overlay">
+            <h1 class="titel">FIND</h1>
+            <h1 class="titel2">FRIVILLIGPROJEKTER</h1>
+          </div>
+      <div class="projekter">
+        <h2>PROJEKTER</h2>
+        <label for="projekttype">Filtrer:</label>
+        <select name="Projekttype" id="type">
+            <option value="Projekttype">Projekttype</option>
+            <option value="miljø">Miljø</option>
+            <option value="dyr">Dyr</option>
+            <option value="hav">Hav</option>
+            <option value="skove">Skove</option>
+            <option value="plantning">Plantning</option>
+        </select>
+        <select name="Projekttype" id="projekttype">
+            <option value="område">Område</option>
+            <option value="Danmark">Danmark</option>
+            <option value="Europa">Europa</option>
+            <option value="Asien">Asien</option>
+            <option value="Afrika">Afrika</option>
+            <option value="Anarktis">Anarktis</option>
+        </select>
+    </div>
+    <a href="projektoversigt.html" class="projekt-grid">
+        <div class="grid-item">
+            <img src="billeder/fisk.jpg" alt="fisk">
+            <h3>HAVUNDERSØGELSER OG MARINEOVERVÅGNING</h3>
+            <p>Verdenshavene lider under trusler som overfiskeri og forurening, hvilket kræver en øget indsats for at beskytte dem (...)</p>
+          </div>
+      </a>
+        <div class="grid-item">
+            <img src="billeder/moss.jpg" alt="mos">
+            <h3>BEVARING AF ØKOSYSTEMER</h3>
+            <p>Vi skal beskytte og genoprette truede økosystemer for at bevare den biologiske mangfoldighed og dyrearter (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/penguins.jpg" alt="pingviner">
+            <h3>BESKYTTELSE AF NORDENS FUGLELIV</h3>
+            <p>Vi sigter mod at beskytte pingvinpopulationer og deres levesteder i norden mod trusler (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/hike.jpg" alt="hike">
+            <h3>VI PLANTER MERE GRØNT I UGANDA</h3>
+            <p> Det er nødvendigt at bevare og genoprette skove verden over for at beskytte dyreliv, bevare biodiversitet og bekæmpe (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/ocean.jpg" alt="havfisk">
+            <h3>BÆREDYGTIGT FISKERI</h3>
+            <p>Vi skal fokusere på at sikre bæredygtig forvaltning af fiskebestande for at bevare økosystemer og sikre fremtidige (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/planting.jpg" alt="plantning">
+            <h3>BESKYTTELSE OG PLANTNING AF VILDE BLOMSTER</h3>
+            <p>Vilde blomster udgør en vigtig del af vores økosystemer, men mange af disse arter er truet af (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/monkey.jpg" alt="abe">
+            <h3>BEVARELSE AF AFRIKANSKE PRIMATER</h3>
+            <p>Vi har brug for hjælp til at bevare levesteder og beskytte truede aber i Afrika gennem bevarelse af skove og (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/forestfire.jpg" alt="skovbrand">
+            <h3>SKOVENS SIKEKRHED</h3>
+            <p>Vi sigter mod at forebygge skovbrande gennem overvågning, uddannelse og bæredygtig skovforvaltning for at (...)</p>
+        </div>
+        <div class="grid-item">
+            <img src="billeder/frozen.jpg" alt="frossen sø">
+            <h3>BESKYTTELSE AF DET FROSNE LANDSKAB</h3>
+            <p>Beskyttelse af Anarktis' unikke økosystemer og dyreliv gennem oprettelse af beskyttede områder og (...)</p>
+        </div>
+    </a>
     </main>
 
     <footer class="wwffooter">

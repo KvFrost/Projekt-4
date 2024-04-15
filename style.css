@@ -724,6 +724,152 @@ h3 {
     margin-bottom: 10px;
 }
 
+/*projektoversigt */
+.bannerfisk img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-height: 100vh;
+  padding: 300px 30px 0;
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+}
+
+.titelfisk, .titel2fisk {
+  position: relative;
+  padding: 10px;
+  font-size: 70px;
+  font-family: "WWF Regular";
+  line-height: 1.2;
+  background-color: black;
+}
+
+.titelfisk {
+  margin-top: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.titel2fisk {
+  margin-top: -30px;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+.tilbage i {
+  margin-right: 10px;
+}
+
+.oversigt h2 {
+  font-family: "WWF Regular";
+}
+
+.oversigt {
+  background-color: white;
+  font-family: "open sans";
+  font-size: 1rem;
+  line-height: 2;
+  width: 75%;
+  margin: 0 auto;
+  padding: 35px 60px 35px 60px;
+}
+
+.oversigt p {
+  margin-bottom: 3em;
+}
+
+.oversigt h3 {
+  font-family: "WWF Regular";
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.5;
+  margin-bottom: 3em;
+}
+
+button.tilmled {
+  font-family: "WWF Regular";
+  color: white;
+  background-color: #ff7500;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: #ff7500;
+}
+
+button.tilmeld:hover {
+  background-color: #E56900;
+}
+
+/*projekter*/
+
+.bannerhand img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.overlayhand {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-height: 100vh;
+  padding: 300px 30px 0;
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+}
+
+.projekter {
+  padding: 20px;
+}
+
+.projekter h2 {
+  font-family: "WWF Regular";
+  margin-bottom: 10px;
+}
+.projekter select, label {
+  font-family: "open sans";
+  margin-bottom: 10px;
+}
+
+.projekt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-items: center;
+  padding: 15px;
+}
+
+.grid-item {
+  text-align: left;
+  max-width: 350px;
+}
+
+.grid-item img {
+  width: 350px;
+  height: 275px;
+}
+
+.grid-item h3 {
+  margin: 20px 0;
+  font-family: "WWF Regular";
+}
+
+.grid-item p {
+  margin: 0;
+  font-family: "open sans";
+}
 /*------*/
 
 
