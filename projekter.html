@@ -34,8 +34,7 @@
           <a href="#" class="frivillig-button">BLIV FRIVILLIG NU</a>
           <a href="#" class="stoet-button">STØT NATUREN</a>
       </div>
-      <section class="banner1">
-      </section>
+      <div class="banner1"></div>
     </header>
 
     <main class="mainhands">
@@ -44,7 +43,9 @@
         <div class="overlayhand">
             <h1 class="titelhand">FIND</h1>
             <h1 class="titel2hand">FRIVILLIGPROJEKTER</h1>
-          </div>
+        </div>
+      </div>
+
       <div class="projekter">
         <h2>PROJEKTER</h2>
         <label for="projekttype">Filtrer:</label>
@@ -56,6 +57,7 @@
             <option value="skove">Skove</option>
             <option value="plantning">Plantning</option>
         </select>
+
         <select name="Projekttype" id="projekttype">
             <option value="område">Område</option>
             <option value="Danmark">Danmark</option>
@@ -64,6 +66,7 @@
             <option value="Afrika">Afrika</option>
             <option value="Anarktis">Anarktis</option>
         </select>
+
     </div>
     <div class="projekt-grid">
       <div class="grid-item">
@@ -115,82 +118,82 @@
         </div>
       </div>
 
-    <section class="support-section">
-      <div class="support-content">
-        <h1 class="support-heading">VÆR MED TIL AT PÅVIRKE VORES PLANETS FREMTID</h1>
-        <div class="support-options">
-          <button class="support-monthly">STØT FAST</button>
-          <button class="support-onetime">STØT MED ENKELTDONATION</button>
+      <section class="support-section">
+        <div class="support-content">
+          <h2 class="support-heading">VÆR MED TIL AT PÅVIRKE VORES PLANETS FREMTID</h2>
+          <div class="support-options">
+            <button class="support-monthly">STØT FAST</button>
+            <button class="support-onetime">STØT MED ENKELTDONATION</button>
+          </div>
+          <p class="support-question"><u>Har du spørgsmål til vores støttemuligheder?</u></p>
         </div>
-        <p class="support-question"><u>Har du spørgsmål til vores støttemuligheder?</u></p>
-      </div>
-  </section> 
+      </section> 
 
 
-  <h1 class="frivilligoplevelser">Andre frivilliges oplevelser</h1>
-  <section class="slideshow">
+      <h1 class="frivilligoplevelser">Andre frivilliges oplevelser</h1>
+      <div class="slideshow">
 
-      <container class="slideshow-container">
+        <div class="slideshow-container">
           <div class="etSlide">
-              <img src="billeder/karina.png" alt="karina">
+            <img src="billeder/karina.png" alt="karina">
           </div>
           <div class="etSlide">
-              <img src="billeder/jeppe.png" alt="jeppe">
+            <img src="billeder/jeppe.png" alt="jeppe">
           </div>
           <div class="etSlide">
-              <img src="billeder/simone.png" alt="simone">
+            <img src="billeder/simone.png" alt="simone">
           </div>
           <div class="etSlide">
-              <img src="billeder/nicklas.png" alt="nicklas">
+            <img src="billeder/nicklas.png" alt="nicklas">
           </div>
           <div class="etSlide">
-              <img src="billeder/sanne.png" alt="sanne">
+            <img src="billeder/sanne.png" alt="sanne">
           </div>    
-      </container>
+        </div>
+        
+        <div class="hvKnapper">
+          <button id="prevBtn" onclick="plusSlide(-1)">ᐸ</button>
+          <button id="nextBtn" onclick="plusSlide(1)">ᐳ</button>
+        </div>
       
-      <section class="hvKnapper">
-        <button id="prevBtn" onclick="plusSlide(-1)">ᐸ</button>
-        <button id="nextBtn" onclick="plusSlide(1)">ᐳ</button>
-    </section>
-    
-        <section class="button-container">
+        <div class="button-container">
           <button class="frivillignuknap" type="submit">BLIV FRIVILLIG NU</button>
-        </section>
-  </section>
-  <script src="javascript/slideshow.js"></script>
+        </div>
+      </div>
+    <script src="javascript/slideshow.js"></script>
 
     </main>
 
     <footer class="wwffooter">
-      <container class="topfooter">   
+      <section class="topfooter">   
 
-         <container class="kolonne">
+         <div class="kolonne">
             <h3>STØT NATUREN</h3>
-             <section>
+             <div>
                <ul class="footerliste">
                  <li>Støt fast - månedligt</li>
                  <li>Støt med enkeltdonation</li>
                  <li>Giv naturen videre - testamente</li>
                  <li>WWF partnere</li>
                </ul>
-             </section>
-           </container>
+              </div>
+            </div>
 
-           <container class="kolonne">
+           <div class="kolonne">
             <h3>SÅDAN REDDER VI NATUREN</h3>
-             <section>
+             <div>
                <ul class="footerliste">
                  <li>Hvordan kæmper vi?</li>
                  <li>Hvor kæmper vi?</li>
                  <li>Living Planet Report</li>
                  <li>Earth Hour</li>
                </ul>
-             </section>
-           </container>
+             </div>
+           </div>
 
-           <container class="kolonne">
+           <div class="kolonne">
             <h3>OM WWF</h3>
-             <section>
+             <div>
                <ul class="footerliste">
                  <li>Kontakt</li>
                  <li>Organisationen</li>
@@ -199,12 +202,12 @@
                  <li>Sådan bruger vi pengene</li>
                  <li>Privatlivspolitik</li>
                </ul>
-             </section>
-           </container>
+             </div>
+           </div>
 
-           <container class="kolonne">
-            <h3>MERE WWF</h3>
-             <section>
+           <div class="kolonne">
+              <h3>MERE WWF</h3>
+              <div>
                <ul class="footerliste">
                  <li>PandaClub (for børn)</li>
                  <li>Webshop</li>
@@ -213,44 +216,42 @@
                  <li>Danmarks Vilde Haver</li>
                  <li>WWF International</li>
                </ul>
-             </section>
-           </container>
-          </container>
+              </div>
+            </div>
 
-          <container class="midtfooter">
-             <container class="rightmidt">
+          <div class="midtfooter">
+             <div class="rightmidt">
                  <h3 class="nyhedsbrev">TILMELD DIG VORES NYHEDSBREV</h3>
                  <p class="nyhedsbrevtext">Modtag spændende nyheder og aktuelle informationer direkte i din indbakke. Ved tilmelding accepterer du vores cookies- og privatlivspolitik.</p>
-             </container>
+             </div>
     
-             <container class="leftmidt">
+             <div class="leftmidt">
                  <button class="button">Indtast fornavn</button>
                  <button class="button">Indtast e-mail</button>
                  <button class="buttonorange">TILMELD MIG</button>
-             </container>
-          </container>
+             </div>
+          </div>
     
-          <container class="bundfooter">
-             <container class="rightbund">
+          <div class="bundfooter">
+             <div class="rightbund">
                  <img src="billeder/logo.jpg" alt="WWF Logo" class="logofooter">
                  <p class="logotekstfooter">Vi bygger en fremtid, hvor mennesker lever i harmoni med naturen.</p>
-             </container>
+             </div>
     
-             <container class="leftbund">
+             <div class="leftbund">
                  <img src="billeder/icons.png" alt="Icons" class="iconer">
-             </container>
-          </container>
+             </div>
+          </div>
     
-          <container class="scrollfooter">
-             <container class="scrollfooteret">
+          <div class="scrollfooter">
+             <div class="scrollfooteret">
                  <img src="billeder/cookie.png" alt="cookie" class="cookie">
-             </container>
-             <container class="scrollfooterto">
+             </div>
+             <div class="scrollfooterto">
                  <div id="scrollToTopButton" class="scroll-top-button">&#8963;</div>
-             </container>
-          </container>
-        </container>
+             </div>
+          </div>
+      </section>
      </footer>
-
   </body>
 </html>

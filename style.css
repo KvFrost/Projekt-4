@@ -452,11 +452,7 @@ iframe {
   align-items: center;
   margin: 25px 0 10px;
 }
-.stjerne {
-  color: #f00;
-  font: 400 20px "Open Sans", sans-serif;
-  margin-left: 20px;
-}
+
 .felt-form {
   gap: 20px;
   display: flex;
