@@ -140,7 +140,13 @@
                   <input type="text" id="name" required>
       
                   <label class="form-tekst" for="birthyear">Dit fødselsår <dl class="stjerne">*</dl></label>
-                  <input type="number" id="birthyear" required>
+                  <container class="dropdown-container">
+                    <select id="year-dropdown">
+                      <option value="">Select Year</option>
+                    </select>
+
+                    <script src="dropdown.js"></script>
+                  </container>
                   
                   <label class="form-tekst" for="phone">Telefonnummer <dl class="stjerne">*</dl></label>
                   <input type="tel" id="phone" required>
