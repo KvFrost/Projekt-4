@@ -776,6 +776,7 @@ button.tilmeld:hover {
   row-gap: 20px;
   justify-items: center;
   padding: 15px;
+  padding-bottom: 100px;
 }
 
 .grid-item {
