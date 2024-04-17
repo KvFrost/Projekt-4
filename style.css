@@ -463,8 +463,8 @@ iframe {
   flex-direction: column;
   line-height: normal;
   width: 50%;
-  margin-left: 0px;
-  margin-bottom: 25px ;
+  margin-left: 0px; 
+  margin-bottom: 25px;
 }
 
 .felter {
@@ -911,7 +911,7 @@ button.tilmeld:hover {
   font-size: 15px;
 }
 
-h3 {
+.kolonne h3 {
   font-size: 25px;
   font-family: "WWF Regular";
 }
