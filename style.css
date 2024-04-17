@@ -750,17 +750,23 @@ button.tilmeld:hover {
 }
 
 .projekter {
-  padding: 20px;
+  padding: 20;
 }
 
 .projekter h2 {
   font-family: "WWF Regular";
+  font-size: 48px;
   margin-bottom: 10px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .projekter select, label {
   font-family: "open sans";
   margin-bottom: 10px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .projekt-grid {
@@ -774,11 +780,11 @@ button.tilmeld:hover {
 
 .grid-item {
   text-align: left;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .grid-item img {
-  width: 350px;
+  width: 400px;
   height: 275px;
 }
 
