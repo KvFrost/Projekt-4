@@ -1,13 +1,19 @@
+console.log("Det virker wuuw")
 
-document.addEventListener("DOMContentLoaded", function() {
-    var dropdown = document.getElementById("year-dropdown");
-  
+document.addEventListener("DOMContentLoaded", function drop() {
+    let dropdown = document.getElementById("year-dropdown");
+    let years = [];
+
     for (let i = 2024; i >= 1970; i--) {
-      let option = document.createElement("option");
-      option.text = i;
-      option.value = i;
-      dropdown.add(option);
+      years.push(i);
     }
+
+    years.forEach(function(year) {
+      let option = document.createElement("option");
+      option.text = year;
+      option.value = year;
+      dropdown.add(option);
+    });
   
     dropdown.addEventListener("change", function() {
       if (this.value !== "") {
