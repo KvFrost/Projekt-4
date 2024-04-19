@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function drop() {
       this.blur();
       let selectedYear = this.value;
       let optionIndex = this.selectedIndex;
-      let scrollPos = optionIndex * 28;
-      this.parentElement.scrollTop = scrollPos;
+      
     } else {
       console.log("Dropdown-værdi er tom.");
     }
