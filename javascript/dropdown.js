@@ -14,14 +14,16 @@ document.addEventListener("DOMContentLoaded", function drop() {
       option.value = year;
       dropdown.add(option);
     });
-  
-    dropdown.addEventListener("change", function() {
-      if (this.value !== "") {
-        this.blur();
-        let selectedYear = this.value;
-        let optionIndex = this.selectedIndex;
-        let scrollPos = optionIndex * 28;
-        this.parentElement.scrollTop = scrollPos;
-      }
-    });
+
+  dropdown.addEventListener("change", function() {
+    if (this.value !== "") {
+      this.blur();
+      let selectedYear = this.value;
+      let optionIndex = this.selectedIndex;
+      let scrollPos = optionIndex * 28;
+      this.parentElement.scrollTop = scrollPos;
+    } else {
+      console.log("Dropdown-værdi er tom.");
+    }
   });
+});
