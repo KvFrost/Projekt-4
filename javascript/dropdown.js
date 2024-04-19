@@ -1,3 +1,4 @@
+
 console.log("Det virker wuuw")
 
 document.addEventListener("DOMContentLoaded", function drop() {
