@@ -19,10 +19,9 @@ document.addEventListener("DOMContentLoaded", function drop() {
     if (this.value !== "") {
       this.blur();
       let selectedYear = this.value;
-      let optionIndex = this.selectedIndex;
-      
+
     } else {
-      console.log("Dropdown-værdi er tom.");
+      console.log("intet årstal.");
     }
   });
 });
